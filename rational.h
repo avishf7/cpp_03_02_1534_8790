@@ -28,21 +28,6 @@ int gcd(int, int);
 // the function returns the reduced fraction
 void reductFraction(Rational&);
 
-//The function accepts 2 rational numbers and adds to each other
-void addRational(void*, const void*, const void*);
-
-//The function accepts 2 rational numbers and returns one minus the other
-void subRational(void*, const void*, const void*);
-
-//The function accepts 2 rational numbers and returns one double the other
-void multRational(void*, const void*, const void*);
-
-//The function receives 2 rational numbers and compares them
-//If they are equal the function returns 0
-//If the first number is greater than the second number the function returns 1
-//If the first number is less than the second number the function returns - 1
-int compareRational(const void*, const void*);
-
 // Converter function from Rational to double 
 double convert(const Rational& rNUm);
 

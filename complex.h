@@ -28,21 +28,6 @@ Complex& complexCtor(Rational&);
 //The function accepts  a complex number and returns its length
 double abs(const Complex&);
 
-//The function accepts 2 complex numbers and adds to each other
-void addComplex(void*, const void*, const void*);
-
-//The function accepts 2 complex numbers and returns one minus the other
-void subComplex(void*, const void*, const void*);
-
-//The function accepts 2  complex numbers and returns one double the other
-void multComplex(void*, const void*, const void*);
-
-//The function receives 2 complex numbers and compares them
-//If they are equal the function returns 0
-//If the first number is greater than the second number the function returns 1
-//If the first number is less than the second number the function returns - 1
-int compareComplex(const void* l, const void* r);
-
 //The function does operator overloading Of operation plus
 Complex operator + (const Complex&, const Complex&);
 

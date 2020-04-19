@@ -55,32 +55,6 @@ void reductFraction(Rational& rNum)
 		rNum.denominator = 1;
 }
 
-void addRational(void* d, const void* l, const void* r)
-{
-	*(Rational*)(d) = *(Rational*)(l)+*(Rational*)(r);
-}
-
-void subRational(void* d, const void* l, const void* r)
-{
-	*(Rational*)(d) = *(Rational*)(l)-*(Rational*)(r);
-}
-
-void multRational(void* d, const void* l, const void* r)
-{
-	*(Rational*)(d) = *(Rational*)(l) * *(Rational*)(r);
-}
-
-int compareRational(const void* l, const void* r)
-{
-	if (*(Rational*)(l) == *(Rational*)(r))
-		return 0;
-	 
-	if (*(Rational*)(l) > * (Rational*)(r))
-		return 1;
-
-	return -1;
-}
-
 double convert(const Rational& rNUm)
 {
 	return ((double)rNUm.numerator / rNUm.denominator);

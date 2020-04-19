@@ -9,7 +9,9 @@ Students: eli iluz 311201354
 #ifndef MY_TYPES
 #define MY_TYPES
 
+using comparator = int(*)(const void*, const void*);
 using uint = unsigned int;
 using cstring = char*;
+
 
 #endif

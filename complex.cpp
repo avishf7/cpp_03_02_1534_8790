@@ -34,32 +34,6 @@ double abs(const Complex& cNum)
 	return sqrt(cNum.real * cNum.real + cNum.imaginary * cNum.imaginary);
 }
 
-void addComplex(void* d, const void* l, const void* r)
-{
-	*(Complex*)(d) = *(Complex*)(l)+*(Complex*)(r);
-}
-
-void subComplex(void* d, const void* l, const void* r)
-{
-	*(Complex*)(d) = *(Complex*)(l)-*(Complex*)(r);
-}
-
-void multComplex(void* d, const void* l, const void* r)
-{
-	*(Complex*)(d) = (*(Complex*)(l))*(*(Complex*)(r));
-}
-
-int compareComplex(const void* l, const void* r)
-{
-	if (*(Complex*)(l) == *(Complex*)(r))
-		return 0;
-
-	if (*(Complex*)(l) > * (Complex*)(r))
-		return 1;
-
-	return -1;
-}
-
 Complex operator+(const Complex& l, const Complex& r)
 {
 	Complex cNum;
